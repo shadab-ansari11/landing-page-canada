@@ -1,0 +1,95 @@
+.why-us-section {
+  background-color: #F9FAFB; /* Soft light gray */
+  text-align: center;
+  padding: 120px 0;
+}
+
+.section-header {
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.section-header h2 {
+  font-size: 3.2rem;
+  margin-top: 16px;
+  color: var(--secondary);
+  letter-spacing: -1.5px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.why-card {
+  background-color: var(--white);
+  padding: 60px 40px;
+  border-radius: 4px;
+  text-align: center; /* Center text inside card */
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.02);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #f1f5f9;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Circle icons look more premium here */
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(10, 25, 47, 0.06);
+  border-color: rgba(184, 147, 68, 0.2);
+}
+
+.why-card:hover .why-card-icon {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: rotateY(360deg); /* Subtle premium animation */
+}
+
+.why-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: var(--secondary);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.why-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .why-us-section {
+    padding: 80px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
