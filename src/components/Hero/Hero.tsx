@@ -15,12 +15,11 @@ const Hero: React.FC = () => {
         >
           <span className="tagline">CANADIAN ACCOUNTING & TAX SPECIALISTS</span>
           <h1>
-            Your Finances, Handled with <br />
-            <span className="accent-text">Precision</span> and Care.
+            Your Finances, handled with{" "}
+            <span className="accent-text">Integrity</span> and Care.
           </h1>
           <p className="hero-description">
-            Serving individuals, self-employed professionals, and corporations{" "}
-            <br />
+            Serving individuals, self-employed professionals, and corporations
             across Canada with expert tax planning, bookkeeping, and CRA
             representation.
           </p>

@@ -69,10 +69,15 @@ const Services: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <span className="tagline-small">WHAT WE DO</span>
-          <h2>Everything You Need, Under One Roof.</h2>
+          {/* <h2>Everything You Need, Under One Roof.</h2> */}
+          <h2>Services</h2>
           <p>
             From your first tax return to complex corporate structures, we have
-            the expertise to handle it all.
+            the expertise to handle it all. Personal tax planning & filing. Tax
+            compliance Corporate Tax, Payroll, GST & tax planning New
+            Incorporations, changes and annual flings Book-keeping, fin.
+            modelling & Financial Reports Financial Planning & Analysis,
+            Compilations
           </p>
         </div>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import "./Header.css";
+import Logo from "../../assets/logo-2.jpeg";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,13 @@ const Header: React.FC = () => {
     >
       <div className="container header-container">
         <div className="logo">
-          TrustHaven <span>Accounting & Tax Inc.</span>
+          <a href="/">
+            <img
+              src={Logo}
+              alt="TrustHaven Accounting & Tax Inc. Logo"
+              className="logo-image"
+            />
+          </a>
         </div>
 
         <nav className="desktop-nav">

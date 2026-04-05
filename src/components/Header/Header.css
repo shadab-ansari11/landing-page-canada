@@ -42,6 +42,24 @@
   line-height: 1;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: auto;
+  height: 65px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled .logo-image {
+  height: 48px;
+}
+
 .desktop-nav ul {
   display: flex;
   gap: 40px;
@@ -149,6 +167,10 @@
   .header {
     height: 80px;
   }
+
+  .logo-image {
+    height: 55px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -166,6 +188,14 @@
   
   .logo span {
     font-size: 0.9rem;
+  }
+
+  .logo-image {
+    height: 45px;
+  }
+
+  .header.scrolled .logo-image {
+    height: 38px;
   }
 
   .mobile-link {
