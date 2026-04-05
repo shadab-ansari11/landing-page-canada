@@ -10,7 +10,7 @@ const About: React.FC = () => {
       description: "Honest advice, even when it's not what you hoped to hear.",
     },
     {
-      title: "Precision",
+      title: "Accuracy",
       description: "Details matter. We get them right, every time.",
     },
     {

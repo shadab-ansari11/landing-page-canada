@@ -69,6 +69,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-right: 0.15em;
+  margin-right: -0.15em; /* Counteract padding so spacing doesn't visually increase */
 }
 
 .hero-description {
@@ -79,40 +81,55 @@
   font-weight: 300;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .btn {
+  display: inline-block;
   padding: 18px 36px;
-  border-radius: 2px; /* Sharper corners for finance */
+  border-radius: 4px; /* Slightly softer than 2px for a modern feel */
   font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   text-align: center;
   text-transform: uppercase;
+  min-width: 220px; /* Consistent button width */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .btn-primary {
   background-color: var(--primary);
   color: var(--secondary);
+  box-shadow: 0 4px 15px rgba(184, 147, 68, 0.2);
 }
 
 .btn-primary:hover {
-  background-color: var(--white);
+  background-color: white;
   color: var(--secondary);
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(184, 147, 68, 0.3);
 }
 
 .btn-outline {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(184, 147, 68, 0.5); /* Primary color instead of just white */
   color: var(--white);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
 }
 
 .btn-outline:hover {
-  background-color: var(--white);
+  background-color: var(--primary);
   color: var(--secondary);
-  border-color: var(--white);
-  transform: translateY(-5px);
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(184, 147, 68, 0.2);
 }
 
 @media (max-width: 1200px) {
@@ -135,10 +152,39 @@
   .hero h1 {
     font-size: 2.8rem;
     letter-spacing: -1px;
+    margin-bottom: 30px;
   }
   
   .hero-description {
     font-size: 1.1rem;
-    padding: 0;
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+
+  .hero-buttons {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    padding: 16px 30px;
+    font-size: 0.8rem;
+    min-width: 0; /* Reset min-width for mobile */
+    width: 100%; /* Full width on tablets/phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-buttons {
+    max-width: 100%;
   }
 }
