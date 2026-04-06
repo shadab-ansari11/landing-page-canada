@@ -50,6 +50,14 @@ const WhyUs: React.FC = () => {
         <div className="section-header">
           <span className="tagline-small">WHY CHOOSE US</span>
           <h2>Why Clients Choose TrustHaven</h2>
+          <p style={{fontWeight: "700", color: '#000'}}>
+            Certified Public Accountant (CPA) with expertise in financial
+            reporting, taxation, auditing, and compliance. Committed to
+            delivering accurate, timely, and strategic financial solutions that
+            help individuals and businesses maintain financial health and
+            achieve long-term goals. Known for attention to detail, integrity,
+            and a client-focused approach.
+          </p>
         </div>
 
         <div className="why-grid">

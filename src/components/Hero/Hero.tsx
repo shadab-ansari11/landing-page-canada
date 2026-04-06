@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <span className="tagline">CANADIAN ACCOUNTING & TAX SPECIALISTS</span>
+          <span className="tagline">CANADIAN AND US ACCOUNTING & TAX SPECIALISTS</span>
           <h1>
             Your Finances, handled with{" "}
             <span className="accent-text">Integrity</span> and Care.
