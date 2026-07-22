@@ -73,9 +73,9 @@ const Services: React.FC = () => {
           <h2>Services</h2>
           <p>
             From your first tax return to complex corporate structures, we have
-            the expertise to handle it all. Personal tax planning & filing. Tax
+            the expertise to handle it all. Personal tax planning & filings. Tax
             compliance Corporate Tax, Payroll, GST & tax planning New
-            Incorporations, changes and annual flings Book-keeping, fin.
+            Incorporations, changes and annual filings Book-keeping, fin.
             modelling & Financial Reports Financial Planning & Analysis,
             Compilations
           </p>
