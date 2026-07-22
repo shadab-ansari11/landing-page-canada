@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     };
     window.addEventListener("scroll", handleScroll);
 
-    // Prevent scrolling when mobile menu is open
+    // Prevent scrolling when mobile menu is
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
