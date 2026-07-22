@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
           TrustHaven Accounting and Tax Inc. — Where integrity meets excellence.
           Canada and U.S.A.
         </p>
-        <a href="mailto:info@trusthaven.biz" className="footer-link">
-          info@trusthaven.biz
+        <a href="mailto:syed@trusthaven.biz" className="footer-link">
+          syed@trusthaven.biz
         </a>
       </div>
     </footer>
