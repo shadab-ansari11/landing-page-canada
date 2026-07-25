@@ -38,7 +38,7 @@
   padding: 60px 40px;
   border-radius: 8px; /* Slightly more rounded */
   text-align: left;
-  border: 1px solid rgba(184, 147, 68, 0.15); /* Stronger gold border */
+  border: 1px solid rgba(14, 165, 233, 0.15); /* Stronger blue border */
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
   overflow: hidden;
