@@ -32,7 +32,7 @@
   padding: 60px 40px;
   border-radius: 8px; /* Slightly more rounded */
   text-align: left;
-  border: 1px solid rgba(184, 147, 68, 0.2); /* Stronger border */
+  border: 1px solid rgba(14, 165, 233, 0.2); /* Stronger border */
   box-shadow: 0 10px 40px rgba(10, 25, 47, 0.04);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   flex: 1;
